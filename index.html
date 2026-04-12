@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sankalp Polyclinic | Dr. T Taid</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        html { scroll-behavior: smooth; }
+        .nav-link:hover { color: #2563eb; transition: 0.3s; }
+        .gradient-blue { background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%); }
+        .sticky-nav { backdrop-filter: blur(10px); background-color: rgba(255, 255, 255, 0.9); }
+    </style>
+</head>
+<body class="bg-slate-50 text-gray-800 font-sans">
+
+    <header class="sticky-nav shadow-sm sticky top-0 z-50 border-b border-slate-200">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2 animate__animated animate__fadeInLeft">
+                <i class="fas fa-hand-holding-medical text-blue-600 text-3xl"></i>
+                <h1 class="text-2xl font-bold text-blue-900">Sankalp <span class="text-blue-600">Polyclinic</span></h1>
+            </div>
+
+            <nav class="hidden md:flex items-center space-x-8 font-semibold text-blue-900">
+                <a href="#about" class="nav-link">About Doctor</a>
+                <a href="#vision" class="nav-link">Our Vision</a>
+                <a href="#contact" class="nav-link">Contact Us</a>
+                <a href="#appointment" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition shadow-md">Book Now</a>
+            </nav>
+
+            <div class="md:hidden text-blue-900 text-2xl">
+                <a href="#appointment"><i class="fas fa-calendar-check"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <section class="gradient-blue text-white py-24 px-4 text-center">
+        <div class="max-w-4xl mx-auto animate__animated animate__zoomIn">
+            <h2 class="text-5xl md:text-6xl font-extrabold mb-6">Expert Care in Dhemaji</h2>
+            <p class="text-blue-100 text-xl mb-10">Trusted Gynecological Consultant & Diagnostic Services.</p>
+            <div class="flex justify-center gap-4">
+                <a href="#appointment" class="bg-white text-blue-700 px-8 py-4 rounded-xl font-bold text-lg hover:shadow-2xl transition">Make Appointment</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 container mx-auto px-4">
+        <div class="bg-white rounded-3xl shadow-xl p-10 flex flex-col md:flex-row items-center gap-10">
+            <div class="bg-blue-100 p-8 rounded-2xl text-blue-600 text-6xl">
+                <i class="fas fa-user-md"></i>
+            </div>
+            <div>
+                <h3 class="text-3xl font-bold text-blue-900 mb-2">Dr. T Taid</h3>
+                <p class="text-blue-600 font-bold mb-4">Gynecologist Consultant</p>
+                <p class="text-gray-600 text-lg">Leading expert in women's health with a focus on patient comfort and advanced medical ethics.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="vision" class="bg-slate-100 py-20 px-4 text-center">
+        <h2 class="text-3xl font-bold text-blue-900 mb-12">Future of Healthcare</h2>
+        <div class="grid md:grid-cols-3 gap-8 container mx-auto">
+            <div class="bg-white p-8 rounded-2xl shadow-sm">
+                <i class="fas fa-microscope text-blue-600 text-4xl mb-4"></i>
+                <h4 class="font-bold mb-2">Advanced Labs</h4>
+                <p class="text-sm text-gray-500">Bringing city-level diagnostic accuracy to College Tinali.</p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-sm">
+                <i class="fas fa-users text-blue-600 text-4xl mb-4"></i>
+                <h4 class="font-bold mb-2">Patient Community</h4>
+                <p class="text-sm text-gray-500">Educational camps and regular maternal health workshops.</p>
+            </div>
+            <div class="bg-white p-8 rounded-2xl shadow-sm">
+                <i class="fas fa-shield-alt text-blue-600 text-4xl mb-4"></i>
+                <h4 class="font-bold mb-2">Safe Care</h4>
+                <p class="text-sm text-gray-500">Upholding the highest standards of safety and privacy.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 container mx-auto px-4">
+        <div class="grid md:grid-cols-2 gap-12">
+            <div class="space-y-6">
+                <h2 class="text-4xl font-bold text-blue-900 italic">Contact Us</h2>
+                <div class="bg-blue-50 p-6 rounded-2xl border-l-8 border-blue-600">
+                    <p class="font-bold text-blue-900"><i class="fas fa-phone-alt mr-2"></i> Phone</p>
+                    <p class="text-xl">+91 7002875742</p>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-2xl border-l-8 border-blue-600">
+                    <p class="font-bold text-blue-900"><i class="fas fa-map-marker-alt mr-2"></i> Location</p>
+                    <p class="text-xl">College Tinali, Dhemaji, Assam</p>
+                </div>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-lg border border-slate-100">
+                <h3 class="text-xl font-bold text-blue-900 mb-4">Doctor's Hours</h3>
+                <div class="space-y-4">
+                    <div class="flex justify-between border-b pb-2"><span>Morning</span> <span class="font-bold">8:30 AM - 10:00 AM</span></div>
+                    <div class="flex justify-between border-b pb-2"><span>Evening</span> <span class="font-bold">6:30 PM - 8:00 PM</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="appointment" class="bg-blue-900 py-20 px-4">
+        <div class="max-w-xl mx-auto bg-white p-10 rounded-3xl shadow-2xl">
+            <h2 class="text-3xl font-bold text-center text-blue-900 mb-8">Book Appointment</h2>
+            <form action="https://formspree.io/f/YOUR_FORMSPREE_ID" method="POST" class="space-y-4">
+                <input type="text" name="name" placeholder="Full Name" required class="w-full p-4 border rounded-xl bg-slate-50">
+                <input type="tel" name="phone" placeholder="Contact Number" required class="w-full p-4 border rounded-xl bg-slate-50">
+                <select name="service" class="w-full p-4 border rounded-xl bg-slate-50">
+                    <option>Gynecologist Consultation</option>
+                    <option>General Blood Test</option>
+                </select>
+                <input type="date" name="date" required class="w-full p-4 border rounded-xl bg-slate-50">
+                <button type="submit" class="w-full bg-blue-600 text-white font-bold py-4 rounded-xl shadow-lg hover:bg-blue-700">Confirm Request</button>
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>
