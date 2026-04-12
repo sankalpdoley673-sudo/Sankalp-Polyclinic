@@ -46,7 +46,7 @@
                 </div>
                 <h3 class="text-xl font-bold mb-3">Expert Consultation</h3>
                 <p class="text-gray-600 mb-4">Specialized Gynaecology care and general health checkups by Dr. T Taid.</p>
-                <span class="text-blue-600 font-bold">8:30 AM - 10:00 AM</span>
+                <span class="text-blue-600 font-bold italic text-sm">Morning: 8:30-10:00 AM | Evening: 6:30-8:00 PM</span>
             </div>
             <div class="bg-white p-8 rounded-3xl shadow-lg border-b-8 border-blue-500 service-card">
                 <div class="bg-blue-100 w-16 h-16 rounded-2xl flex items-center justify-center text-blue-500 text-3xl mb-6">
@@ -81,8 +81,10 @@
                 </div>
             </div>
             <div class="rounded-3xl overflow-hidden shadow-2xl h-96 bg-white relative">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3527.147745778401!2d94.5776100742183!3d27.245842145326884!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3740e78da08302e1%3A0xc366a95eeba7bc6f!2sSankalp%20Drug%20House!5e0!3m2!1sen!2sin!4v1712950000000!5m2!1sen!2sin" 
-                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3550.052825838421!2d94.55006477544256!3d27.477077476315277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3740e78da08302e1%3A0xc366a95eeb59bc6f!2sSankalp%20Drug%20House%2C%20Dhemaji%20College%20Tiniali!5e0!3m2!1sen!2sin!4v1715422500000!5m2!1sen!2sin" 
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
             </div>
         </div>
     </section>
@@ -91,16 +93,18 @@
         <div class="max-w-xl mx-auto bg-white p-10 rounded-3xl shadow-2xl text-gray-800 animate__animated animate__fadeIn">
              <h2 class="text-3xl font-bold text-center mb-8 text-blue-900 underline decoration-blue-200">Book Appointment</h2>
              <form action="https://formspree.io/f/xyklgyrq" method="POST" class="space-y-4">
+                
                 <input type="text" name="name" placeholder="Full Patient Name" required class="w-full p-4 border-2 border-slate-100 rounded-xl focus:border-blue-600 outline-none">
+                
                 <input type="tel" name="phone" placeholder="WhatsApp Number" required class="w-full p-4 border-2 border-slate-100 rounded-xl focus:border-blue-600 outline-none">
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
-                        <label class="text-xs font-bold text-blue-600 ml-1 uppercase">Appointment Date</label>
+                        <label class="text-xs font-bold text-blue-600 ml-1 uppercase">Preferred Date</label>
                         <input type="date" name="date" required class="w-full p-4 border-2 border-slate-100 rounded-xl focus:border-blue-600 outline-none mt-1">
                     </div>
                     <div>
-                        <label class="text-xs font-bold text-blue-600 ml-1 uppercase">Preferred Time</label>
+                        <label class="text-xs font-bold text-blue-600 ml-1 uppercase">Preferred Timing</label>
                         <select name="timing" required class="w-full p-4 border-2 border-slate-100 rounded-xl focus:border-blue-600 outline-none mt-1">
                             <option value="Morning">Morning (8:30 - 10:00 AM)</option>
                             <option value="Evening">Evening (6:30 - 8:00 PM)</option>
@@ -113,6 +117,7 @@
                     <option>Laboratory Blood Test</option>
                     <option>Pharmacy Medicine Order</option>
                 </select>
+                
                 <button type="submit" class="w-full bg-blue-600 text-white font-black py-5 rounded-xl text-lg hover:bg-blue-700 shadow-xl transition-all">Submit Request</button>
              </form>
         </div>
